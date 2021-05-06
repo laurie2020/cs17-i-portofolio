@@ -11097,6 +11097,7 @@ section {
 @import "node_modules/@icon/iconfont.css";
 @import "node_modules/boxicons/css/boxicons.min.css";
 @import "node_modules/venobox/venobox.css";
-@import "owl.carousel/dist/assets/owl.carousel.min.css"
+@import "owl.carousel/dist/assets/owl.carousel.min.css";
+@import "aos/dist/aos.css"
 
 
