@@ -2,17 +2,17 @@ require('./bootstrap');
 
 // IMPORTS JS
 
-require("jquery/dist/jquery.min.js")
-require("bootstrap/js/bootstrap.bundle.min.js")
-require("jquery.easing/jquery.easing.min.js")
-require("php-email-form/validate.js")
-require("waypoints/jquery.waypoints.min.js")
-require("counterup/counterup.min.js")
-require("isotope-layout/isotope.pkgd.min.js")
-require("venobox/venobox.min.js")
-require("owl.carousel/owl.carousel.min.js")
-require("typed.js/typed.min.js")
-require("aos/aos.js")
+require("jquery/dist/jquery");
+require("jquery.easing/jquery.easing");
+// require("php-email-form/validate.js")
+require("waypoints/lib/jquery.waypoints");
+require("counterup/jquery.counterup");
+require("isotope-layout/dist/isotope.pkgd");
+require("venobox/venobox/venobox");
+require("owl.carousel/dist/owl.carousel");
+require("typed.js/lib/typed");
+require("aos/dist/aos");
+
 /**
 * Template Name: iPortfolio - v1.4.1
 * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
