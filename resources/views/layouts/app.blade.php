@@ -26,7 +26,7 @@
     @yield('content')
 
     <script src={{ asset('js/aos.js') }}></script>
-    <script src={{ asset('js/app.js') }}></script>
+    {{-- <script src={{ asset('js/app.js') }}></script> --}}
     <script src={{ asset('js/counterup.min.js') }}></script>
     <script src={{ asset('js/isotope.pkgd.min.js') }}></script>
     <script src={{ asset('js/jsquery.easing.min.js') }}></script>
