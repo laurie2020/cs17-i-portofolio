@@ -8,34 +8,19 @@
             <thead>
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Last name</th>
-                    <th scope="col">Birth date</th>
-                    <th scope="col">Website</th>
-                    <th scope="col">Phone number</th>
-                    <th scope="col">City</th>
-                    <th scope="col">Age</th>
-                    <th scope="col">Degree</th>
-                    <th scope="col">E-Mail</th>
-                    <th scope="col">Freelance</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Categorie</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach ($users as $user)
+                @foreach ($portofolios as $portofolio)
                     <tr>
-                        <th scope="row">{{ $user->id }}</th>
-                        <td>{{ $user->lastname }}</td>
-                        <td>{{ $user->firstname }}</td>
-                        <td>{{ $user->birthdate }}</td>
-                        <td>{{ $user->website }}</td>
-                        <td>{{ $user->phonenumber }}</td>
-                        <td>{{ $user->city }}</td>
-                        <td>{{ $user->age }}</td>
-                        <td>{{ $user->degree }}</td>
-                        <td>{{ $user->email }}</td>
-                        <select>{{ $user->freelance}}</select>
+                        <th scope="row">{{ $portofolio->id }}</th>
+                        <td>{{ $portofolio->lastname }}</td>
+                        <td>{{ $portofolio->firstname }}</td>
                         <td>
-                            <a href="/article/{{ $user->id }}/edit">Edit</a>
-                            <form action="/article/{{ $user->id }}/delete" method="POST">
+                            <a href="/portofolios/{{ $portofolios->id }}/edit">Edit</a>
+                            <form action="/portofolios/{{ $portofolios->id }}/delete" method="POST">
                                 @csrf
                                 <button class="bg-danger" type="submit" >Delete</button>
                             </form>
