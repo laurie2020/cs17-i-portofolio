@@ -17,7 +17,7 @@
                 @foreach ($facts as $fact)
                     <tr>
                         <th scope="row">{{ $fact->id }}</th>
-                        <td>{{ $fact->Icone }}</td>
+                        <td><i class="{{ $fact->icone }}"></i></td>
                         <td>{{ $fact->number }}</td>
                         <td>{{ $fact->description }}</td>
                         <td>

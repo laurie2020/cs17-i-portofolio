@@ -17,7 +17,7 @@
                 @foreach ($services as $service)
                     <tr>
                         <th scope="row">{{ $service->id }}</th>
-                        <td>{{ $service->image }}</td>
+                        <td><i class="{{ $service->icone }}"></i></td>
                         <td>{{ $service->title }}</td>
                         <td>{{ $service->description }}</td>
                         <td>

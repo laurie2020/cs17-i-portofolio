@@ -16,8 +16,8 @@
                 @foreach ($portofolios as $portofolio)
                     <tr>
                         <th scope="row">{{ $portofolio->id }}</th>
-                        <td>{{ $portofolio->lastname }}</td>
-                        <td>{{ $portofolio->firstname }}</td>
+                        <td><img src={{ asset( $portofolio->image ) }} alt="" width="200"></td>
+                        <td>{{ $portofolio->categorie }}</td>
                         <td>
                             <a href="/portofolios/{{ $portofolio->id }}/edit">Edit</a>
                             <form action="/portofolios/{{ $portofolio->id }}/delete" method="POST">
