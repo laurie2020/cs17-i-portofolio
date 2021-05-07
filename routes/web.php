@@ -24,6 +24,10 @@ Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 
+Route::get('/backoffice', function(){
+    return view('welcome2');
+})->name('backoffice');
+
 // User
 // All
 Route::get('/users', [UserController::class, 'index'])->name('users');

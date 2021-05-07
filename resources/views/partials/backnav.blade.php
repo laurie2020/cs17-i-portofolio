@@ -20,11 +20,11 @@
           <nav class="nav-menu">
             <ul>
               <li class="active"><a href={{ route("welcome") }}><i class="bx bx-home"></i> <span>Revenir au site</span></a></li>
-              <li><a href="#about"><i class="bx bx-user"></i> <span>User</span></a></li>
-              <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>facts</span></a></li>
-              <li><a href="#portfolio"><i class="bx bx-book-content"></i> Skills</a></li>
-              <li><a href="#services"><i class="bx bx-server"></i> Portfolio</a></li>
-              <li><a href="#contact"><i class="bx bx-envelope"></i> Services</a></li>
+              <li><a href={{ route('users') }}><i class="bx bx-user"></i> <span>User</span></a></li>
+              <li><a href={{ route('facts') }}><i class="bx bx-file-blank"></i> <span>facts</span></a></li>
+              <li><a href={{ route('skills') }}><i class="bx bx-book-content"></i> Skills</a></li>
+              <li><a href={{ route('portofolios') }}><i class="bx bx-server"></i> Portfolio</a></li>
+              <li><a href={{ route('services') }}><i class="bx bx-envelope"></i> Services</a></li>
               <li><a href="#contact"><i class='bx bx-data'></i> Contact</a></li>
             </ul>
           </nav><!-- .nav-menu -->
