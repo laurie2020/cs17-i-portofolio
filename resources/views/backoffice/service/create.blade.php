@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<form method="POST" action="/article/store">
+<form method="POST" action="/services/store">
     @csrf
     <div class="mb-3">
       <label class="form-label">Icone</label>
