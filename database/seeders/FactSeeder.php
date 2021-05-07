@@ -30,7 +30,7 @@ class FactSeeder extends Seeder
 
         DB::table('facts')->insert([
             'icone' => 'icofont-live-support',
-            'number' => 1.463,
+            'number' => 1463,
             'description' => 'Hours Of Support aut commodi quaerat',
             'created_at' => now()
         ]);

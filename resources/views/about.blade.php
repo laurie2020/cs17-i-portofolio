@@ -17,24 +17,29 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                 magna aliqua.
               </p>
+
+              @foreach ($users as $user)
+                  
               <div class="row">
+                
                 <div class="col-lg-6">
                   <ul>
-                    <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 1 May 1995</li>
-                    <li><i class="icofont-rounded-right"></i> <strong>Website:</strong> www.example.com</li>
-                    <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +123 456 7890</li>
-                    <li><i class="icofont-rounded-right"></i> <strong>City:</strong> City : New York, USA</li>
+                    <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> {{ $user->birthdate }}</li>
+                    <li><i class="icofont-rounded-right"></i> <strong>Website:</strong> {{ $user->website }}</li>
+                    <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> {{ $user->phoneNumber }}</li>
+                    <li><i class="icofont-rounded-right"></i> <strong>City:</strong> {{ $user->city }}</li>
                   </ul>
                 </div>
                 <div class="col-lg-6">
                   <ul>
-                    <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 30</li>
-                    <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> Master</li>
-                    <li><i class="icofont-rounded-right"></i> <strong>PhEmailone:</strong> email@example.com</li>
-                    <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> Available</li>
+                    <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> {{ $user->age }}</li>
+                    <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> {{ $user->degree }}</li>
+                    <li><i class="icofont-rounded-right"></i> <strong>PhEmailone:</strong> {{ $user->email }}</li>
+                    <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> {{ $user->freelance }}</li>
                   </ul>
                 </div>
               </div>
+              @endforeach
               <p>
                 Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
                 Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.

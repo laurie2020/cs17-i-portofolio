@@ -5,6 +5,9 @@ use App\Http\Controllers\PortofolioController;
 use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\SkillController;
 use App\Http\Controllers\UserController;
+use App\Models\Fact;
+use App\Models\Portofolio;
+use App\Models\Service;
 use App\Models\Skill;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
@@ -21,7 +24,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    
+    $users = User::all();
+    $facts = Fact::all();
+    $portofolios = Portofolio::all();
+    $services = Service::all();
+    $skills = Skill::all();
+
+    return view('welcome', compact('users', 'facts', 'portofolios', 'services', 'skills'));
 })->name('welcome');
 
 Route::get('/backoffice', function(){

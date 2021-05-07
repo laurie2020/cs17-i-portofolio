@@ -16,27 +16,27 @@ class SkillSeeder extends Seeder
     {
         DB::table('skills')->insert([
             'language' => 'HTML',
-            'level' => '100%'
+            'level' => '100'
         ]);
         DB::table('skills')->insert([
-            'language' => 'HTML',
-            'level' => '100%'
+            'language' => 'CSS',
+            'level' => '90'
         ]);
         DB::table('skills')->insert([
-            'language' => 'HTML',
-            'level' => '100%'
+            'language' => 'Javascript',
+            'level' => '75'
         ]);
         DB::table('skills')->insert([
-            'language' => 'HTML',
-            'level' => '100%'
+            'language' => 'PHP',
+            'level' => '80'
         ]);
         DB::table('skills')->insert([
-            'language' => 'HTML',
-            'level' => '100%'
+            'language' => 'WordPress/CMS',
+            'level' => '90'
         ]);
         DB::table('skills')->insert([
-            'language' => 'HTML',
-            'level' => '100%'
+            'language' => 'Photoshop',
+            'level' => '55' 
         ]);
     }
 }

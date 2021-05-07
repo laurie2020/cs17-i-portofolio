@@ -9,15 +9,18 @@
   
           <div class="row no-gutters">
   
+            @foreach ($facts as $fact)
+                
             <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
               <div class="count-box">
-                <i class="icofont-simple-smile"></i>
-                <span data-toggle="counter-up">232</span>
-                <p><strong>Happy Clients</strong> consequuntur quae</p>
+                <i class="{{ $fact->icone }}"></i>
+                <span data-toggle="counter-up">{{ $fact->number }}</span>
+                <p>{{ $fact->description }}</p>
               </div>
             </div>
+            @endforeach
   
-            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+            {{-- <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
               <div class="count-box">
                 <i class="icofont-document-folder"></i>
                 <span data-toggle="counter-up">521</span>
@@ -39,7 +42,7 @@
                 <span data-toggle="counter-up">15</span>
                 <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
               </div>
-            </div>
+            </div> --}}
   
           </div>
   
