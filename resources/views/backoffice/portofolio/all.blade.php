@@ -19,8 +19,8 @@
                         <td>{{ $portofolio->lastname }}</td>
                         <td>{{ $portofolio->firstname }}</td>
                         <td>
-                            <a href="/portofolios/{{ $portofolios->id }}/edit">Edit</a>
-                            <form action="/portofolios/{{ $portofolios->id }}/delete" method="POST">
+                            <a href="/portofolios/{{ $portofolio->id }}/edit">Edit</a>
+                            <form action="/portofolios/{{ $portofolio->id }}/delete" method="POST">
                                 @csrf
                                 <button class="bg-danger" type="submit" >Delete</button>
                             </form>

@@ -21,8 +21,8 @@
                         <td>{{ $service->title }}</td>
                         <td>{{ $service->description }}</td>
                         <td>
-                            <a href="/services/{{ $services->id }}/edit">Edit</a>
-                            <form action="/services/{{ $services->id }}/delete" method="POST">
+                            <a href="/services/{{ $service->id }}/edit">Edit</a>
+                            <form action="/services/{{ $service->id }}/delete" method="POST">
                                 @csrf
                                 <button class="bg-danger" type="submit" >Delete</button>
                             </form>

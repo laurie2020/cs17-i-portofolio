@@ -12,7 +12,7 @@ class PortofolioController extends Controller
         $page = "Portofolios";
         $portofolios = Portofolio::all();
 
-        return view('backoffice.portofolio.all', compact('page', 'portofolio'));
+        return view('backoffice.portofolio.all', compact('page', 'portofolios'));
     }
 
     public function destroy($id){
