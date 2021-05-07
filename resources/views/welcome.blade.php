@@ -10,7 +10,6 @@
         @include('resume')
         @include('portofolio')
         @include('services')
-        @include('testimonials')
         @include('contact')
     </main>
     @include('partials.footer')
