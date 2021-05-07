@@ -16,10 +16,10 @@
             <tbody>
                 @foreach ($services as $service)
                     <tr>
-                        <th scope="row">{{ $services->id }}</th>
-                        <td>{{ $services->image }}</td>
-                        <td>{{ $services->title }}</td>
-                        <td>{{ $services->description }}</td>
+                        <th scope="row">{{ $service->id }}</th>
+                        <td>{{ $service->image }}</td>
+                        <td>{{ $service->title }}</td>
+                        <td>{{ $service->description }}</td>
                         <td>
                             <a href="/services/{{ $services->id }}/edit">Edit</a>
                             <form action="/services/{{ $services->id }}/delete" method="POST">

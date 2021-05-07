@@ -12,7 +12,7 @@ class ServicesController extends Controller
         $page = "Services";
         $services = Service::all();
 
-        return view('backoffice.services.all', compact('page', 'services'));
+        return view('backoffice.service.all', compact('page', 'services'));
     }
 
     public function destroy($id){
