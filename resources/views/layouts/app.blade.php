@@ -28,7 +28,11 @@
     <script src={{ asset("js/typed.min.js") }}></script>
     <script src={{ asset("js/counterup.min.js") }}></script>
     <script src={{ asset("js/isotope.pkgd.min.js") }}></script>
-    <script src={{ asset("js/jquery.easing.min.js") }}></script>
+    {{-- <script src={{ asset("js/jquery.easing.min.js") }}></script> --}}
+    <script src={{ asset("js/jquery.min.js") }}></script>
+    <script src={{ asset("js/jquery.waypoints.min.js") }}></script>
+    {{-- <script src={{ asset("js/owl.carousel.min.js") }}></script> --}}
+    <script src={{ asset("js/venobox.min.js") }}></script>
     <script src={{ asset("js/main.js") }}></script>
 
 </body>
