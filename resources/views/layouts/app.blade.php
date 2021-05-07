@@ -23,7 +23,17 @@
 
     @yield('content')
 
-
+    <script src={{ asset("js/aos/aos.js") }}></script>
+    <script src={{ asset("js/counterup/counterup.min.js") }}></script>
+    <script src={{ asset("js/isotope-layout/isotope.pkgd.js") }}></script>
+    <script src={{ asset("js/jquery.easing/jquery.easing.min.js") }}></script>
+    <script src={{ asset("js/jquery/jquery.min.js") }}></script>
+    <script src={{ asset("js/waypoints/jquery.waypoints.min.js") }}></script>
+    <script src={{ asset("js/typed.js/typed.js") }}></script>
+    <script src={{ asset("js/owl.carousel/owl.carousel.min.js") }}></script>
+    <script src={{ asset("js/venobox/venobox.min.js") }}></script>
+    <script src={{ asset("js/app.js") }}></script>
+    <script src={{ asset("js/main.js") }}></script>
 
 </body>
 </html>
