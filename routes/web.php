@@ -41,12 +41,15 @@ Route::get('/backoffice', function(){
 // User
 // All
 Route::get('/users', [UserController::class, 'index'])->name('users');
+
 // Delete
 Route::post('/users/{id}/delete', [UserController::class, 'destroy']);
+
 // Edit
 Route::get('/users/{id}/edit', [UserController::class, 'edit']);
 // Update
 Route::post('/users/{id}/update', [UserController::class, 'update']);
+
 // Create
 Route::get('/users/create', [UserController::class, 'create']);
 // Store
